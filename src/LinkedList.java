@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class LinkedList {
     private Node head;
     private Node tail;
@@ -28,6 +30,16 @@ public void display(){
 
         }
 
+}
+
+public void getHead(){
+    System.out.println("Head: "+head.value);
+}
+public void getTail(){
+    System.out.println("Tail: "+tail.value);
+    }
+public void getLength() {
+    System.out.println("Length: "+length);
 }
 
 
