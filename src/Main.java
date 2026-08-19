@@ -3,9 +3,9 @@ public class Main {
     LinkedList mylinkedlist=new LinkedList(4);
     mylinkedlist.append(6);
     mylinkedlist.display();
-    System.out.println(mylinkedlist.removeLast().value);
-    System.out.println(mylinkedlist.removeLast().value);
-    System.out.println(mylinkedlist.removeLast());
+    mylinkedlist.prepend(2);
+    mylinkedlist.display();
+
 
 
   }
