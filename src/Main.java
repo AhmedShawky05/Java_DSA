@@ -7,6 +7,7 @@ public class Main {
     mylinkedlist.set(1,3);
     mylinkedlist.set(2,5);
     mylinkedlist.insert(2,4);
+    System.out.println(mylinkedlist.remove(1).value);
     mylinkedlist.display();
 
 
