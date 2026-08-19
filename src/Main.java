@@ -3,7 +3,9 @@ public class Main {
     LinkedList mylinkedlist=new LinkedList(4);
     mylinkedlist.append(6);
     mylinkedlist.prepend(2);
-    System.out.println(mylinkedlist.get(1).value);
+
+    mylinkedlist.set(1,3);
+    mylinkedlist.set(2,4);
     mylinkedlist.display();
 
 
