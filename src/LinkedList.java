@@ -8,6 +8,7 @@ public class LinkedList {
     class Node{
     int value;
     Node next;
+
     Node(int value){
        this.value=value;
    }
@@ -70,6 +71,7 @@ public void prepend(int value){
 }
 
 
+
     public Node removeFirst(){
         if(length==0){
             return null;
@@ -83,6 +85,18 @@ public void prepend(int value){
         }
         return temp;
     }
+
+public Node get(int index){
+        if(index<0 || index>=length){
+            return null;
+        }
+        Node temp = head;
+        for(int i=0;i<index;i++){
+            temp=temp.next;
+        }
+    return temp;
+}
+
 
 
 

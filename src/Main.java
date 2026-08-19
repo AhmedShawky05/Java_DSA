@@ -3,10 +3,9 @@ public class Main {
     LinkedList mylinkedlist=new LinkedList(4);
     mylinkedlist.append(6);
     mylinkedlist.prepend(2);
-    System.out.println(mylinkedlist.removeFirst().value);
-    System.out.println(mylinkedlist.removeFirst().value);
+    System.out.println(mylinkedlist.get(1).value);
     mylinkedlist.display();
-    mylinkedlist.getLength();
+
 
 
 
