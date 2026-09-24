@@ -147,7 +147,19 @@ public Node remove(int index){
         length--;
         return temp;
 }
-
+    public void reverse(){
+        Node temp=head;
+        head=tail;
+        tail=temp;
+        Node before=null;
+        Node after=temp.next;
+        for(int i=0;i<length;i++){
+            after=temp.next;
+            temp.next=before;
+            before=temp;
+            temp=after;
+        }
+    }
 
 
 
@@ -160,6 +172,7 @@ public void display(){
         }
         System.out.print("Null\n");
 }
+
 
 
 public void getHead(){

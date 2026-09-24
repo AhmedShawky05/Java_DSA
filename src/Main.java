@@ -4,10 +4,8 @@ public class Main {
     mylinkedlist.append(6);
     mylinkedlist.prepend(2);
 
-    mylinkedlist.set(1,3);
-    mylinkedlist.set(2,5);
-    mylinkedlist.insert(2,4);
-    System.out.println(mylinkedlist.remove(1).value);
+    mylinkedlist.reverse();
+
     mylinkedlist.display();
 
 
