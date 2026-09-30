@@ -4,7 +4,8 @@ public class Main {
     mylinkedlist.append(6);
     mylinkedlist.prepend(2);
 
-    System.out.println(mylinkedlist.FindMiddleNode().value);
+
+    System.out.println(mylinkedlist.hasLoop());
 
     mylinkedlist.display();
 
