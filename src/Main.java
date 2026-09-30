@@ -5,7 +5,7 @@ public class Main {
     mylinkedlist.prepend(2);
 
 
-    System.out.println(mylinkedlist.hasLoop());
+    System.out.println(mylinkedlist.findKthFromEnd(1).value);
 
     mylinkedlist.display();
 
