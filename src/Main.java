@@ -4,7 +4,7 @@ public class Main {
     mylinkedlist.append(6);
     mylinkedlist.prepend(2);
 
-    mylinkedlist.reverse();
+    System.out.println(mylinkedlist.FindMiddleNode().value);
 
     mylinkedlist.display();
 
