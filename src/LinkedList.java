@@ -237,4 +237,30 @@ public class LinkedList {
         return slow;
     }
 
+
+
+    public void removeDuplicates() {
+        Node current = head;
+
+        while (current != null) {
+
+            Node prev = current;
+            Node runner = current.next;
+
+            while (runner != null) {
+
+                if (current.value == runner.value) {
+                    prev.next = runner.next;
+                    runner = prev.next;
+                }
+                else {
+                    prev = runner;
+                    runner = runner.next;
+                }
+            }
+
+            current = current.next;
+        }
+    }
+
 }
