@@ -1,13 +1,15 @@
+import java.sql.SQLOutput;
+
 public class Main {
   public static void main(String[] args) {
-    LinkedList mylinkedlist=new LinkedList(2);
-    mylinkedlist.append(3);
-    mylinkedlist.append(4);
-    mylinkedlist.append(2);
-    mylinkedlist.append(4);
+    LinkedList mylinkedlist=new LinkedList(1);
+    mylinkedlist.append(1);
+    mylinkedlist.append(1);
+    mylinkedlist.append(1);
 
 
-    mylinkedlist.removeDuplicates();
+  System.out.println(mylinkedlist.binaryToDecimal());
+
 
     mylinkedlist.display();
 
