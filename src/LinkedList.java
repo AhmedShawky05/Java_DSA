@@ -275,4 +275,30 @@ public class LinkedList {
 
     return num;
     }
+
+
+    public void partitionList(int x){
+        Node Dummy1= new Node(0);// list contains numbers less than x
+        Node Dummy2= new Node(0);// list contains numbers greater than or equal to x
+        Node prev1=Dummy1;
+        Node prev2=Dummy2;
+        Node temp=head;
+        while(temp!=null){
+            if(temp.value < x){
+                prev1.next=temp;
+                temp=temp.next;
+                prev1=prev1.next;
+            } else {
+                prev2.next=temp;
+                temp=temp.next;
+                prev2=prev2.next;
+
+            }
+
+        }
+        prev1.next=Dummy2.next;
+        prev2.next=null;
+        head=Dummy1.next;
+    }
+
 }
