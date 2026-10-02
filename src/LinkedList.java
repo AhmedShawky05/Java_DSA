@@ -324,5 +324,24 @@ public class LinkedList {
 
     }
 
+    public void swapPairs() {
+        Node Dummy=new Node(0);
+        Node prev=Dummy;
+        Dummy.next = head;
+        Node first=prev.next;
+
+
+        while(first!=null && first.next!=null){
+            Node second=first.next;
+            prev.next=second;
+            first.next=second.next;
+            second.next=first;
+            prev=first;
+            first=first.next;
+        }
+        head=Dummy.next;
+
+    }
+
 
 }
