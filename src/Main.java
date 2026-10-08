@@ -2,10 +2,11 @@ import java.sql.SQLOutput;
 
 public class Main {
   public static void main(String[] args) {
-   DoublyLinkedList mylinkedlist=new DoublyLinkedList(1);
-    mylinkedlist.append(2);
+   DoublyLinkedList mylinkedlist=new DoublyLinkedList(2);
     mylinkedlist.append(3);
-   System.out.println(mylinkedlist.removeLast().value);
+    mylinkedlist.append(4);
+    mylinkedlist.prepend(1);
+
     mylinkedlist.display();
 
 
