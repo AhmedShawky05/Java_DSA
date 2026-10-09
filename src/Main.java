@@ -6,7 +6,7 @@ public class Main {
     mylinkedlist.append(3);
     mylinkedlist.append(4);
     mylinkedlist.prepend(1);
-    System.out.println(mylinkedlist.get(1).value);
+    mylinkedlist.set(3,10);
 
     mylinkedlist.display();
 
