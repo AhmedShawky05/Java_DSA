@@ -6,7 +6,8 @@ public class Main {
     mylinkedlist.append(3);
     mylinkedlist.append(4);
     mylinkedlist.prepend(1);
-    mylinkedlist.set(3,10);
+
+    mylinkedlist.insert(2,20);
 
     mylinkedlist.display();
 
